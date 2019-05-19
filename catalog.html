@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Барбершоп</title>
+    <title>Барбершоп "Бородинский"</title>
   </head>
 <body>
     <header class="main-header">
@@ -32,8 +32,46 @@
 
          <section class="filters">
              <h2 class="visually-hidden">Фильтры товаров</h2>
-             <!-- Здесь будет форма -->
-         </section>
+              <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
+                <fieldset>
+                  <legend>Производители:</legend>
+                  <ul>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" id="filter-baxter-of-california" type="checkbox" name="baxter-of-california" checked>
+                      <label for="filter-baxter-of-california">Baxter of California</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" id="filter-mr-natty" type="checkbox" name="mr-natty">
+                      <label for="filter-mr-natty">Mr Natty</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" id="filter-suavecito" type="checkbox" name="suavecito" checked>
+                      <label for="filter-suavecito">SUAVECITO</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" id="filter-malin-goetz" type="checkbox" name="malin-goetz">
+                      <label for="filter-malin-goetz">Malin+Goetz</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" id="filter-murrays" type="checkbox" name="murrays">
+                      <label for="filter-murrays">Murrays</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" id="filter-american-crew" type="checkbox" name="american-crew" checked>
+                      <label for="filter-american-crew">American crew</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset>
+                  <legend>Группы товаров:</legend>
+                  <ul>
+                    <li class="filter-option">Бритвенные принадлежности</li>
+                    <li class="filter-option">Средства для ухода</li>
+                    <li class="filter-option">Аксессуары</li>
+                  </ul>
+                </fieldset>
+              </form>
+            </section>
 
          <section class="catalog">
              <h2 class="visually-hidden">Список срредств для ухода</h2>
